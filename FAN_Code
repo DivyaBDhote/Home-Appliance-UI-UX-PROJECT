@@ -1,0 +1,262 @@
+import SwiftUI
+
+struct FANView: View {
+
+@StateObject var fANViewModel FANViewModel()
+
+@Environment(\.presentationMode) var presentationMode: Binding PresentationMode>
+
+var body: some View {
+
+VStack {
+
+VStack {
+
+ZStack(alignment: .bottomLeading) {
+
+Image("img_chevrons_right")
+
+.resizable()
+
+frame(width: getRelativeWidth(48.0), height: getRelativeWidth(48.0),
+
+alignment: .center)
+
+scaledToFit()
+
+.clipped()
+
+padding(.top, getRelativeHeight(486.0))
+
+padding(.leading, getRelativeWidth(239.0))
+
+Image("img_chevrons_right")
+
+resizable() .
+
+frame(width: getRelativeWidth(48.0), height: getRelativeWidth(48.6),
+
+alignment: .center)
+
+.scaledToFit()
+
+.clipped()
+
+padding(.top, getRelativeHeight(486.0))
+
+padding(.trailing, getRelativeWidth(238.0))
+
+VStack {
+
+HStack {
+
+HStack {
+
+ZStack {
+
+Button(action: {}, label: {
+
+Image("img group 26")
+})
+
+frame(width: getRelativeWidth(50.0),
+
+height: getRelativeWidth(50.0), alignment: .center)
+
+background (RoundedCorners (topLeft: 25.0, topright: 25.0,
+
+bottomLeft: 25.0, bottomRight: 25.0)
+
+fill(LinearGradient(gradient: Gradient(colors: [ColorConstants .Gray7007f,
+
+ColorConstants
+
+.Gray9007f]),
+
+startPoint: .topLeading,
+
+endPoint: .bottomTrailing)))
+
+padding(.all, getRelativeWidth(6.0))
+
+padding(.vertical, getRelativeHeight(6.0))
+
+.padding(.horizontal, getRelativeWidth(6.0))
+
+}
+
+hideNavigationBar()
+
+.frame(width: getRelativeWidth(62.0),
+
+height: getRelativeWidth(62.0), alignment: .center)
+
+background (RoundedCorners (topLeft: 31.0, topRight: 31.0,
+
+DLIT bottomLeft: 31.0, bottomRight: 31.0)
+
+fill(LinearGradient(gradient: Gradient(colors: [ColorConstants .Gray70002,
+
+ColorConstants .Gray900]),
+
+startPoint: topLeading,
+
+endPoint: bottomTrailing)))
+
+shadow(color: ColorConstants.Black9003f, radius: 20, x: 10, y: 10)
+
+Button(action: {}, label: {
+
+Image("img_profil_button")
+})
+
+.frame(width: getRelativeWidth(62.0),
+
+height: getRelativeWidth(62.0), alignment: .center)
+
+}
+
+padding(.leading, getRelativeWidth(186.0))
+
+frame(width: getRelativeWidth(310.0), height: getRelativeHeight(62.0),
+
+Balignment: .leading)
+
+.padding(.horizontal, getRelativeWidth(40.0))
+
+}
+
+.frame(width: UIScreen.main.bounds.width - 20,
+
+height: getRelativeHeight(62.0), alignment: .leading)
+
+Text("spacer")
+
+.minimumScaleFactor (0.5)
+
+.multilineTextAlignment(.leading)
+
+.frame(width: getRelativeWidth(164.0), height: getRelativeHeight(158.0))
+
+ZStack(alignment: .center) {
+
+Text(StringConstants.kLblFan)
+
+.font(FontScheme.kPoppinsBold(size: getRelativeHeight(25.0)))
+
+.fontweight(.bold)
+
+.foregroundColor(ColorConstants.WhiteA700)
+
+minimumScaleFactor(0.5)
+
+multilineTextAlignment(.leading)
+
+frame (width: getRelativeWidth(49.0),
+
+height: getRelativeHeight(38.0), alignment: topLeading) padding(.leading, getRelativeWidth(52.0))
+
+padding(.trailing, getRelativeWidth(63.0))
+
+CircularProgress (percentage: 0.5, fontSize: 0.0,
+
+backgroundColor: Color.clear,
+
+fontcolor: Color.clear,
+
+borderColor1: ColorConstants.PinkA700,
+
+borderColor LinearGradient(gradient@gpadient(colorse colonconstans
+PinkA700]), startPoint: leading, endPoint: trailing), borderwidth: 7)
+
+frame (width: getRelativeWidth(164.0),
+
+height: getRelativeWidth(164.0), alignment: .center)
+
+background (ColorConstants.PinkA700)
+
+.shadow(radius: 21)
+
+}
+
+hideNavigationBar()
+
+frame(width: getRelativeWidth(164.0), height: getRelativeWidth(164.0),
+
+alignment: .center)
+
+Text("spacer_one")
+
+.minimumScaleFactor (0.5)
+
+.multilineTextAlignment(.leading)
+
+.frame(width: getRelativeWidth(158.0), height: getRelativeHeight(101.0))
+
+HStack {
+
+Image("image_not_found")
+
+.resizable()
+
+.frame(width: getRelativeWidth(24.0),
+
+1 height: getRelativeWidth(24.0), alignment: .center)
+
+scaledToFit()
+
+clipped()
+
+Text(StringConstants.kLblSpeed)
+
+font(FontScheme.kPoppinsBold(size: getRelativeHeight(25.0)))
+
+fontWeight(.bold)
+
+foregroundColor(ColorConstants.WhiteA700)
+
+minimumScaleFactor (0.5)
+
+.multilineTextAlignment(.leading)
+
+frame (width: getRelativeWidth(74.0),
+ColorConstants
+
+Black90000]),
+
+startPoint: topLeading, endPoint: bottom Trailing), linewidth: 1))
+
+background (RoundedCorners (topLeft: 40.0, topRight: 40.0, bottomLeft: 40.0, bottomRight: 40.0)
+
+fill(ColorConstants.Gray30038))
+
+.shadow(radius: 40)
+
+.padding(.bottom, getRelativeHeight(54.0))
+
+padding(.horizontal, getRelativeWidth(11.0))
+
+}
+
+.frame(width: UIScreen.main.bounds.width, alignment: topLeading)
+
+background (ColorConstants.BlueGray900)
+
+.padding(.top, getRelative ight(30.0)). padding(.bottom, getRelativeHeight(10.0))
+
+} frame (width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height) .background (ColorConstants.BlueGray900)
+
+ignoresSafeArea()
+
+hideNavigationBar()
+
+}
+
+Struct FANView Previews: PreviewProvider {
+
+static var previews: some View {
+
+FANView()
+
+}
+}
