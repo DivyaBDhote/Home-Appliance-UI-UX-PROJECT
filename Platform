@@ -22,7 +22,7 @@ Read our guidelines to increase the accuracy of design conversion to code by opt
 
 Libraries
 Alamofire : For REST API call https://github.com/Alamofire/Alamofire
-Project Structure
+### Project Structure
 
   ├── Template.xcodeproj  - it lets you create and modify Xcode projects from Ruby.
   │
