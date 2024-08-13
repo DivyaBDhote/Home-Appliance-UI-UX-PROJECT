@@ -1,0 +1,174 @@
+import SwiftUI
+
+act Welcomeview: View {
+
+@Stateobject var welcomeViewModel = WelcomeViewModel() @
+
+Environment(\.presentationMode) var presentationMode: Binding<PresentationMode> >
+
+var body: some View {
+
+VStack {
+
+VStack {
+
+HStack {
+
+Text(StringConstants.kNsgWelcomeChandu)
+
+.Font(FontScheme.kPoppinsMedium(size: getRelativeHeight(24.0)))
+
+FontWeight(medium)
+
+.foregroundColor(ColorConstants.WhiteA700)
+
+minimumScaleFactor (0.5)
+
+multilineTextAlignment(.leading)
+
+padding(.leading, getRelativeWidth(27.0))
+
+padding(.trailing, getRelativeWidth(137.0))
+
+}
+
+frame(width: UIScreen.main.bounds.width-20, height: getRelativeHeight(56.0),
+ alignment: leading)
+
+padding(.top, getRelativeHeight(30.0))
+
+VStack(alignment: leading, spacing: 0) {
+
+Text("spacer")
+
+minimumScaleFactor(0.5)
+
+.multilineTextAlignment(.leading)
+
+.frame(width: getRelativeWidth(199.0), height: getRelativeHeight(147.0))
+
+Text(StringConstants.kLblSelectDevice)
+
+.font(FontScheme.kPoppinsBold(size: getRelativeHeight(30.0)))
+
+.fontweight(.bold)
+
+.foregroundColor(ColorConstants.whiteA700)
+
+minimumScaleFactor(0.5)
+resizable()
+
+.frame(width: getRelativeWidth(48.0), height: getRelativeWidth(48.0),
+
+alignment: .center)
+
+.scaledToFit()
+
+.clipped()
+
+}
+
+.frame(width: getRelativeWidth(316.0), height: getRelativeHeight(54.0),
+
+alignment: leading)
+
+.overlay (RoundedCorners (topLeft: 24.0, topRight: 24.0, bottomLeft: 24.0, bottomRight: 24.0)
+
+stroke(LinearGradient(gradient: Gradient(colors: [ColorConstants WhiteA700,
+
+ColorConstants Black90000]), startPoint: .topLeading, endPoint: bottom Trailing), linewidth: 1))
+
+background(RoundedCorners (topLeft: 24.0, topRight: 24.0, bottomleft: 24.0, bottomRight: 24.0)
+
+fill(LinearGradient(gradient: Gradient(colors: [ColorConstants.Pink800, ColorConstants .Pink3007a]),
+
+startPoint: topLeading,
+
+endPoint: bottomTrailing)))
+
+shadow(radius: 40)
+
+padding(.top, getRelativeHeight(39.0))
+
+Text("spacer_one")
+
+minimumScaleFactor(0.5) multilineTextAlignment(.leading)
+background (RoundedCorners (topLeft: 34.0, topRight: 34.0, bottomLeft: 34.0, bottomRight: 34.0)
+
+Fill(LinearGradient(gradient: Gradient(colors: [ColorConstants Gray9804c,
+
+ColorConstants
+
+Gray6004c]), startPoint: topleading,
+
+endPoint: bottomTrailing)))
+
+shadow(radius: 20)
+
+ZStack {
+
+hideNavigationBar()
+
+frame(width: getRelativeWidth(37.0), height: getRelativeWidth(37.0), alignment: leading)
+
+background (RoundedCorners (topLeft: 18.0, topRight: 18.0, bottomLeft: 18.0, ----bottomRight: 18.0)
+
+fill(ColorConstants.Pink900))
+
+padding(.top, getRelativeHeight(17.0))
+
+padding(.leading, getRelativeWidth(14.0))
+
+}
+
+frame(width: UIScreen.main.bounds.width, height: getRelativeHeight(663.0), alignment: .center)
+
+Text("tabbar")
+
+minimumScaleFactor(0.5)
+
+multilineTextAlignment.leading)
+
+frame(width: UIScreen.main.bounds.width-20, height: getRelativeHeight(75.0),
+
+ alignment: .center)
+
+overlay (RoundedCorners (topLeft: 37.0, topRight: 37.0, bottomLeft: 37.0,  bottomRight: 37.0)
+
+stroke(LinearGradient(gradient: Gradient(colors: [ColorConstants WhiteA700,ColorConstants Black90000]),
+
+startPoint: topLeading, endPoint: bottomTrailing),
+
+linewidth: 1))
+
+.background (ColorConstants.Gray30038)
+
+shadow(radius: 40)
+
+frame(width: UIScreen.main.bounds.width, alignment: .topLeading)
+
+background (ColorConstants.BlueGray900)
+
+padding(.top, getRelativelHeight(30.0))
+
+padding(.bottom, getRelativelHeight(10.0))
+
+}
+
+frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+
+background (ColorConstants.BlueGray900) .
+
+.ignoresSafeArea()
+
+hideNavigationBar()
+
+}
+
+uct WelcomeView_Previews: PreviewProvider {
+
+static var previews: some View {
+}
+WelcomeView()
+
+}}
