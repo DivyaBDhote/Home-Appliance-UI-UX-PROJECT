@@ -1,0 +1,226 @@
+import SwiftUI
+
+struct Profileview: View {
+
+@Stateobject var profileViewModel = ProfileViewModel()
+
+@Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+var body: some View {
+
+VStack {
+
+VStack {
+
+HStack {
+
+HStack {
+
+ZStack(alignment: .center) {
+
+Button(action: {}, label: {
+
+Image("img group_26")
+
+})
+
+frame(width: getRelativeWidth(50.0), height: getRelativeWidth(50.0),
+
+alignment: .center) background (RoundedCorners (topLeft: 25.0, topRight: 25.0,
+
+bottomLeft: 25.0, bottomRight: 25.0) fill(LinearGradient(gradient: Gradient(colors: [ColorConstants
+
+.Gray7007f,
+
+ColorConstants
+
+Gray9007f]),
+
+startPoint: .topLeading,
+
+endPoint: bottomTrailing)))
+
+padding(.all, getRelativeWidth(6.0)) padding(.vertical, getRelativeHeight(6.0))
+
+padding(horizontal, getRelativeWidth(6.0))
+
+ZStack (
+
+Button(action: (), label: (
+
+Image("img_group_26")
+: background (RoundedCorners (topleft: 25.0, topRight 25.0, bottomLeft: 25.0, bottomRight: 25.0)
+
+fill(LinearGradient(gradient: Gradient(colors: [ColorConstants
+
+Gray7007f,
+
+ColorConstants
+
+Gray9007f]), startPoint: topLeading,
+
+endPoint: .bottomTrailing)))
+
+padding(.all, getRelativeWidth(6.0))
+
+padding(.vertical, getRelativeHeight(6.0)) padding(.horizontal, getRelativeWidth(6.0))
+
+}
+
+hideNavigationBar()
+
+frame(width: getRelativeWidth(62.0), height: getRelativeWidth(62.0),
+
+alignment: .center)
+
+background (RoundedCorners (topLeft: 31.0, topRight: 31.0,
+
+1 bottomleft: 31.0, bottomRight: 31.0) Fill(LinearGradient(gradient: Gradient(colors: [ColorConstants
+
+Gray70002, ColorConstants Gray900]), startPoint: topLeading, endPoint: bottom Trailing))) shadow(color: ColorConstants.Black9003f, radius: 20, x: 10, y: 10)
+
+}
+
+hideNavigationBar()
+
+frame(width: getRelativeWidth(62.0); height: getRelativeWidth(62.0),
+
+alignment: .center) background RoundedCorners (topleft: 31.0, topRicht: 31.0. bottomleft: 31.0.
+ .Gray70002,
+
+ColorConstants
+
+.Gray900]), startPoint: .topLeading,
+
+endPoint: bottom Trailing)))
+
+shadow(color: ColorConstants.Black9003f, radius: 20, x: 10, y: 10)
+
+Spacer()
+
+ZStack(alignment: .center) {
+
+Text(StringConstants.kLb]MyProfile)
+
+font(FontScheme.kPoppinsSemiBold(size: getRelativeHeight(25.0)))
+
+.fontWeight(.semibold)
+
+foregroundColor(ColorConstants.WhiteA700)
+
+minimumScaleFactor(0.5)
+
+multilineTextAlignment(.leading) .frame(width: getRelativeWidth(120.0),
+
+height: getRelativeHeight(38.0), alignment:.topLeading)
+
+Text(StringConstants.klblMyProfile)
+
+.font(FontScheme.kPoppinsSemiBold(size: getRelativeHeight(25.0)))
+
+fontweight(.semibold) .
+
+foregroundColor(ColorConstants.WhiteA700)
+
+minimumScaleFactor(0.5)
+
+multilineTextAlignment(.leading) .frame(width: getRelativeWidth(120.0),
+
+height: getRelativeHeight(38.0), alignment: topleading)
+
+} hideNavigationBar()
+
+.frame(width: getRelativeWidth(120.0), height: getRelativeHeight(38.0),
+
+alignment: .center)
+
+padding(.top, getRelativeHeight(13.0))
+
+.padding(.bottom, getRelativeHeight(10.0)) padding(.leading, getRelativeWidth(123.0))
+ VStack [
+
+VStack {
+
+ZStack (
+
+
+Image("img group_76")
+
+.resizable()
+
+frame(width: getRelativeWidth(83.0),
+
+height: getRelativeWidth(83.0), alignment:.center)
+
+.scaledToFit()
+
+.clipped()
+
+hideNavigationBar()
+
+frame(width: getRelativeWidth(83.0),
+
+height: getRelativeWidth(83.0), alignment: .center)
+
+background (Image("img_group_76")
+
+.resizable()
+
+.scaledToFit())
+
+frame(width: getRelativeWidth(131.0), height: getRelativeWidth(131.0),
+
+alignment: .center)
+
+overlay (RoundedCorners (topLeft: 65.0, topRight: 65.0, bottomleft: 65.0,
+
+bottomRight: 65.0) stroke(LinearGradient(gradient: Gradient(colors: [ColorConstants
+
+.Black90072, ColorConstants WhiteA700]), startPoint: topLeading, endPoint: bottomTrailing), background (RoundedCorners (topLeft: 65.0, topRight: 65.0,
+
+lineWidth: 2))
+
+12209 bottomLeft: 65.0, bottomRight: 65.0))
+alignment: .center)
+
+overlay (RoundedCorners (topLeft: 37.0, topRight: 37.0, bottomleft: 37.0, bottomRight: 37.0)
+
+stroke(LinearGradient(gradient: Gradient(colors: [ColorConstants WhiteA700,
+
+ColorConstants .Black90000]),
+
+startPoint: topLeading,
+
+endPoint: bottomTrailing),
+
+linewidth: 1))
+
+background (ColorConstants.Gray30038)
+
+shadow(radius: 48)
+
+}
+
+frame(width: UIScreen.main.bounds.width, alignment: topleading)
+
+background(ColorConstants.BlueGray908)
+
+padding(.top, getRelativeHeight(30.0))
+
+padding(.bottom, getRelativeHeight(10.0))
+
+}
+
+frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height) background (ColorConstants.BlueGray900)
+
+ignoresSafeArea()
+
+hideNavigationBar()
+
+Et Profileview Previews: PreviewProvider {
+}}
+static var previews: some View {
+
+ProfileView()
+}
+}
