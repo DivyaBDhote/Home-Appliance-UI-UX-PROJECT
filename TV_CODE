@@ -1,0 +1,192 @@
+import SwiftUI
+
+Et TWiew: View {
+
+StateObject var tWiewModel WiewModel()
+
+Environment(\.presentationMode) var presentationMode: Binding PresentationMode> war
+
+VStack {
+
+body: some View {
+
+VStack {
+
+HStack {
+
+HStack {
+
+ZStack {
+
+Button(action: {), label: {
+
+Image("img group_26")
+
+}) frame(width: getRelativeWidth(50.0), height: getRelativeWidth(50.0), : .center)
+
+alignment background (RoundedCorners (topLeft: 25.0, topRight: 25.0, bottomleft: 25.0, bottomRight: 25.0)
+
+fill(LinearGradient(gradient: Gradient(colors: [ColorConstants
+
+Gray7007f,
+
+ColorConstants
+
+Gray9007f]),
+
+startPoint: .topLeading,
+
+endPoint: bottomTrailing)))
+
+padding(.all, getRelativeWidth(6.0)) padding(.vertical, getRelativeHeight(6.0))
+
+padding(.horizontal, getRelativeWidth(6.0))
+
+}
+
+hideNavigationBar()
+
+.frame(width: getRelativeWidth(62.0), height: getRelativeWidth(62.0),
+
+alignment: center)
+.frame(width: getRelativeWidth(62.0), height: getRelativeWidth(62.0), alignment: .center)
+
+padding(.leading, getRelativeWidth(186.0))
+
+frame(width: getRelativewidth(310.0), height: getRelativeHeight(62.0), alignment: leading)
+
+padding(.horizontal, getRelativeWidth(40.0))
+
+} .frame(width: UIScreen.main.bounds.width - 20, height: getRelativeHeight(62.0),
+
+alignment: leading)
+
+ZStack(alignment: .topLeading) {
+
+Text(StringConstants.kLblTv)
+
+font(FontScheme.kPoppinsBold(size: getRelativeHeight(25.0)))
+
+fontweight(.bold)
+
+ForegroundColor(ColorConstants.WhiteA700)
+
+minimumScaleFactor (0.5)
+
+multilineTextAlignment(.leading)
+
+frame(width: getRelativeWidth(33.0), height: getRelativeHeight(38.0),
+
+alignment: topLeading)
+
+padding(bottom, getRelativeHeight(358.78))
+
+padding(.trailing, getRelativeWidth(190.0))
+
+ZStack {}
+
+frame(width: getRelativeWidth(164.0), height: getRelativeWidth(164.0),
+
+hideNavigationBar()
+
+alignment: topLeading)
+
+background(RoundedCorners (topLeft: 82.0, topRight: 82.0, bottomLeft: 82.0, bottomright; 82.0) Fill(ColorConstants. PinkA700))
+
+.shadow(radius: 21)
+
+.padding(.bottom, getRelativeHeight(296.0))
+
+padding(.trailing, getRelativeWidth(124.0))
+ Spacer()
+
+ZStack(alignment: .center) {
+
+Image("img")
+
+.resizable()
+
+frame(width: getRelativeWidth(8.0),
+
+height: getRelativeHeight(16.0), alignment: .center)
+
+.scaledToFit()
+
+.clipped()
+
+Image("img")
+
+resizable()
+
+frame(width: getRelativeWidth(8.0),
+
+height: getRelativeHeight(16.0), alignment: .center)
+
+.scaledToFit()
+
+.clipped()
+
+}
+
+hideNavigationBar()
+
+frame(width: getRelativeWidth(8.0), height: getRelativeHeight(16.0),
+
+alignment: .center)
+
+padding(.leading, getRelativeWidth(64.0))
+
+frame(width: getRelativeWidth(81.0), height: getRelativeHeight(16.0), alignment: .center)
+
+padding(.vertical, getRelativeHeight(12.0)).
+
+padding(.leading, getRelativeWidth(58.0))
+
+}
+
+frame(width: getRelativeWidth(188.0), height: getRelativeHeight(40.0), alignment: .center)
+
+Button(action: (), label: {
+
+HStack(spacing: 0) {
+
+Text(StringConstants.kLbloff)
+stroke(LinearGradient(gradient: Gradient(colors: [ColorConstants.whiteA700, ColorConstants
+
+Black90000]), startPoint: topLeading, endPoint: bottomTrailing), linewidth: 1))
+
+background(RoundedCorners (topLeft: 40.0, topRight: 40.0, bottomLeft: 40.0, bottomRight: 40.0)
+
+.Fill(ColorConstants.Gray30038))
+
+.shadow(radius: 40)
+
+.padding(.bottom, getRelativeHeight(54.0))
+
+padding(.horizontal, getRelativeWidth(51.0))
+
+}
+
+frame(width: UIScreen.main.bounds.width, alignment: .topLeading)
+
+background (ColorConstants.BlueGray900)
+
+padding(.top, getRelativeHeight(30.0))
+
+padding(.bottom, getRelativeHeight(10.0))
+
+frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+
+background (ColorConstants.BlueGray900)
+
+.ignoresSafeArea()
+
+hideNavigationBar()
+
+Et TWiew Previews: PreviewProvider {
+
+static var previews: some View {
+
+TWiew()
+}}
+}
