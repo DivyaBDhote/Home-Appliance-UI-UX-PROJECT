@@ -1,4 +1,4 @@
-[14:23, 8/13/2024] chandu😉: import SwiftUI
+import SwiftUI
 struct HomeView: View {
 
 @Stateobject var homeViewModel = HomeViewModel()
@@ -54,7 +54,7 @@ alignment: .center)
 .padding(.vertical, getRelativeHeight(15.0))
 
 .padding(.leading, getRelativeWidth(22.0))
-[14:24, 8/13/2024] chandu😉: padding(.trailing, getRelativeWidth(8.0))
+padding(.trailing, getRelativeWidth(8.0))
 
 xtField(StringConstants.kLblusername, text: $homeViewModel.usernameText)
 
@@ -85,7 +85,7 @@ Spacer()
 Image("img_vuesax_linear_lock")
 
 .resizabl…
-[14:24, 8/13/2024] chandu😉: .padding()
+.padding()
 
 Image("img_vuesax_linear_eyeslash")
 
@@ -138,7 +138,7 @@ minimumScaleFactor(0.5)
 alignment: top)
 
 overlay (RoundedCorners (topLeft: 7.0, topRight: 7.0, bottomLeft: 7.0,
-[14:25, 8/13/2024] chandu😉: minimumScaleFactor(0.5)
+ minimumScaleFactor(0.5)
 
 multilineTextAlignment(.leading)
 
