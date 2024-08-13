@@ -1,0 +1,54 @@
+import SwiftUI
+
+struct ACView: View {
+
+@StateObject var aCViewModel = ACViewModel()
+
+@Environment(\.presentationMode) var presentationMode: Binding PresentationMode>
+
+var body: some View {
+
+VStack {
+
+VStack {
+
+Image("img_image_1")
+
+.resizable()
+
+frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height,
+
+1 alignment: .topLeading)
+
+.scaledToFit()
+
+.clipped()
+
+}
+
+.frame(width: UIScreen.main.bounds.width, alignment: .topLeading)
+
+background (ColorConstants.BlueGray900)
+
+padding(.top, getRelativeHeight(30.0))
+
+.padding(.bottom, getRelativeHeight(10.0))
+
+}
+
+.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+
+background(ColorConstants.BlueGray900)
+
+.ignoresSafeArea()
+
+hideNavigationBar()
+
+struct ACView_Previews: PreviewProvider {
+
+static var previews: some View {
+
+ACView()
+
+}
+}
