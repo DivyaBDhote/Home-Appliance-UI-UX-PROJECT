@@ -1,4 +1,4 @@
-[14:09, 8/13/2024] chandu😉: import SwiftUI
+ import SwiftUI
 
 struct BULBView: View {
 
@@ -49,7 +49,7 @@ hideNavigationBar()
 .frame(width: getRelativeWidth(62.0), height: getRelativewidth(62.0),
 
 alignment: center)
-[14:09, 8/13/2024] chandu😉: background (RoundedCorners (topLeft: 31.0, topRight: 31.0, bottomLeft: 31.0 bottomRight: 31.0)
+background (RoundedCorners (topLeft: 31.0, topRight: 31.0, bottomLeft: 31.0 bottomRight: 31.0)
 
 Fill(LinearGradient(gradient: Gradient(colors: [ColorConstants Gray70002,
 
@@ -96,7 +96,7 @@ minimumScaleFactor (0.5)
 multilineTextAlignment(.leading)
 
 frame (width: getRelativeWidth(61.0), height: getRelativeHeight(38.0)
-[14:10, 8/13/2024] chandu😉: hideNavigationBar()
+ hideNavigationBar()
 
 frame(width: getRelativeWidth(164.0), height: getRelativeWidth(164.0), alignment: .center)
 
@@ -149,7 +149,7 @@ height: getRelativeHeight(31.0), alignment:..center)
 clipped()
 
 padding(,trailing, getRelativeWidth(179.0))
-[14:10, 8/13/2024] chandu😉: startPoint: topLeading, endPoint: .bottomTrailing); linewidth: 1))
+startPoint: topLeading, endPoint: .bottomTrailing); linewidth: 1))
 
 background (RoundedCorners (topLeft: 40.0, topRight: 40.0, bottomleft: 40:0
 
