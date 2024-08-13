@@ -1,0 +1,41 @@
+DhiWise: https://www.dhiwise.com/
+
+Overview
+These guidelines guide you on how to make your application design accurate to get better quality results on DhiWise. Such guidelines are divided into below categories:
+General Guidelines
+The must best practices to be followed are listed under this category, using which the best DhiWise-friendly design can be done for your application.
+
+Design using Frames
+
+Group Components and Layers
+
+Group Vectors
+
+Name Everything
+
+Component Specific Guidelines
+The additional guidelines for specific components are to be followed to get your component auto-identified or generate the perfect design for a particular component.
+
+Input Controls
+
+Display Controls
+
+Navigation Controls
+
+Group Controls
+
+Overlay Controls
+
+Change view Components
+
+Quality Guidelines
+The following guidelines describe additional practices that make your design follow a clean format and get even better quality results.
+
+Invisible Components
+Unwanted Components
+
+Excess Text Boundary
+
+Components Outside Frame
+
+Image Masking
