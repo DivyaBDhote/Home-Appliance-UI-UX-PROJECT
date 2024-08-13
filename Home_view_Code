@@ -1,0 +1,183 @@
+[14:23, 8/13/2024] chandu😉: import SwiftUI
+struct HomeView: View {
+
+@Stateobject var homeViewModel = HomeViewModel()
+
+@Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+var body: some View {
+
+VStack {
+
+VStack {
+
+Text("spacer")
+
+.minimumScaleFactor(0.5)
+
+.multilineTextAlignment(.leading)
+
+frame(width: getRelativeWidth(86.0), height: getRelativeHeight(171.0))
+
+Text(StringConstants.kLblLogIn)
+
+Font(FontScheme.kPoppinsBold(size: getRelativeHeight(30.0)))
+
+.fontweight(.bold)
+
+foregroundColor(ColorConstants.WhiteA700)
+
+minimumScaleFactor(0.5)
+
+multilineTextAlignment(.leading)
+
+frame(width: getRelativeWidth(86.0), height: getRelativeHeight(45.0), alignment: .topLeading)
+
+.padding(.leading, getRelativeWidth(9.0))
+
+HStack {
+
+Spacer()
+
+Image("img_vuesax_linear_user")
+
+.resizable()
+
+.frame(width: getRelativeWidth(24.0), height: getRelativeWidth(24.0),
+
+alignment: .center)
+
+.scaledToFit()
+
+.clipped()
+
+.padding(.vertical, getRelativeHeight(15.0))
+
+.padding(.leading, getRelativeWidth(22.0))
+[14:24, 8/13/2024] chandu😉: padding(.trailing, getRelativeWidth(8.0))
+
+xtField(StringConstants.kLblusername, text: $homeViewModel.usernameText)
+
+font(FontScheme.kPoppinsMedium(size: getRelativeHeight(17.0)))
+
+.foregroundColor(ColorConstants.WhiteA70082)
+
+.padding()
+
+.frame(width: getRelativeWidth(316.0), height: getRelativeHeight(54.0), alignment: .center)
+
+.overlay (RoundedCorners (topLeft: 24.0, topRight: 24.0, bottomLeft: 24.0, ||||bottomRight: 24.0)
+
+.stroke(ColorConstants.Pink800,
+
+linewidth: 2))
+
+background (RoundedCorners (topLeft: 24.0, topRight: 24.0, bottomLeft: 24.0, bottomRight: 24.0)
+
+Fill(color.cle fill(Color.clear.opacity(0.7)))
+
+padding(.top, getRelativeHeight(28.0)) padding(.leading, getRelativeWidth(9.0))
+
+HStack {
+
+Spacer()
+
+Image("img_vuesax_linear_lock")
+
+.resizabl…
+[14:24, 8/13/2024] chandu😉: .padding()
+
+Image("img_vuesax_linear_eyeslash")
+
+.resizable()
+
+frame(width: getRelativeWidth(24.0), height: getRelativeWidth(24.0),
+
+alignment: .center)
+
+.scaledToFit()
+
+.clipped()
+
+.padding(.vertical, getRelativeHeight(15.0))
+
+padding(-horizontal, getRelativeWidth(30.0))
+
+Spacer()
+
+.frame(width: getRelativeWidth(316.0), height: getRelativeHeight(54.0); alignment: .center)
+
+overlay (RoundedCorners (topLeft: 24.0, topRight: 24.0, bottomLeft: 24.0, bottomRight: 24.0)
+
+stroke(ColorConstants.Pink800, .
+
+linewidth: 2))
+
+.background(RoundedCorners (topLeft: 24.0, topRight: 24.0, bottomLeft: 24.0, bottomRight: 24.0)
+
+fill(Color.clear.opacity(0.7)))
+
+padding(.top, getRelativeHeight(29.0))
+
+padding(.leading, getRelativeWidth(9.0))
+
+HStack {
+
+CheckboxField(idValue: StringConstants.kLblRemember Me,
+
+label: StringConstants.kLb1Remember Me,
+
+color: ColorConstants.Gray50,
+
+isMarked: ShomeViewModel.remembermeCheckbox)
+
+minimumScaleFactor(0.5)
+
+.frame(width: getRelativeWidth(158.0), height: getRelativeHeight(26.0),
+
+alignment: top)
+
+overlay (RoundedCorners (topLeft: 7.0, topRight: 7.0, bottomLeft: 7.0,
+[14:25, 8/13/2024] chandu😉: minimumScaleFactor(0.5)
+
+multilineTextAlignment(.leading)
+
+frame(width: getRelativeWidth(62.0), height: getRelativeHeight(26.0),
+
+alignment: topLeading)
+
+padding(.leading, getRelativeWidth(35.0))
+
+}
+
+.frame(width: getRelativeWidth(290.0), height: getRelativeHeight(27.0), alignment: leading)
+
+padding(.top, getRelativeHeight(21.0))
+
+padding(.leading, getRelativewidth(7.0)) padding(.trailing, getRelativeWidth(29.0))
+
+} Frame(width: UIScreen.main.bounds.width, alignment: topLeading)
+
+background (ColorConstants.BlueGray900)
+
+padding(.top, getRelativeHeight(30.0))
+
+padding(.bottom, getRelativeHeight(10.0))
+
+frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+
+background (ColorConstants.BlueGray900)
+
+.ignoresSafeArea()
+
+hideNavigationBar()
+
+}
+
+ct HomeView_Previews: PreviewProvider (
+
+static var previews: some View {
+
+HomeView()
+}
+}
